@@ -1,4 +1,4 @@
-#Bookmark landing page 
+#Bookmark landing page
 
 This is a solution to the [Bookmark landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158).
 
@@ -7,8 +7,8 @@ This is a solution to the [Bookmark landing page challenge on Frontend Mentor](h
 - [Table of contents](#table-of-contents)
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
+  - [Screenshot](#screenshot)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -25,6 +25,10 @@ Users should be able to:
   - The input field is empty
   - The email address is not formatted correctly
 
+### Links
+
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+
 ### Screenshot
 
 ![](./screenshot.jpg)
@@ -35,10 +39,7 @@ Users should be able to:
 
 ![landscape: ](./dist/images/screenshots/Bookmark-landing-page-landscape.png)
 
-### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
