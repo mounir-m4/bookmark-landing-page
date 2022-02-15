@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+			integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="css/main.css" />
+		<title>Bookmark landing page</title>
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="container">
+				<nav class="main-nav d-flex py-1 my-1">
+					<a href="index.html">
+						<svg width="148" height="25" xmlns="http://www.w3.org/2000/svg">
+							<g fill="none" fill-rule="evenodd">
+								<path
+									d="M37 6.299h5.227c.746 0 1.434.155 2.062.466.629.311 1.123.735 1.484 1.27s.542 1.12.542 1.754c0 .672-.165 1.254-.495 1.746-.33.491-.762.868-1.297 1.129v.15c.697.248 1.25.643 1.661 1.185.41.541.616 1.191.616 1.95 0 .735-.196 1.385-.588 1.951a3.817 3.817 0 0 1-1.587 1.307c-.665.305-1.403.457-2.212.457H37V6.299zm5.04 5.45c.548 0 .986-.152 1.316-.457.33-.305.495-.688.495-1.148 0-.448-.159-.824-.476-1.13-.318-.304-.738-.457-1.26-.457H39.52v3.192h2.52zm.28 5.619c.61 0 1.086-.159 1.428-.476.342-.317.513-.731.513-1.241 0-.51-.174-.927-.522-1.251-.349-.324-.847-.485-1.494-.485H39.52v3.453h2.8zm12.927 2.595c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.511-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.915-3.528a6.711 6.711 0 0 1 2.51-2.529C52.756 6.308 53.94 6 55.248 6c1.306 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.915 3.528a6.711 6.711 0 0 1-2.51 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.258-.578 4.177 4.177 0 0 0 1.615-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.615-1.624 4.52 4.52 0 0 0-2.258-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.605 1.624 4.47 4.47 0 0 0 2.25.578zm15.353 2.39c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.51-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.914-3.528a6.711 6.711 0 0 1 2.511-2.529C68.108 6.308 69.294 6 70.6 6c1.307 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.914 3.528a6.711 6.711 0 0 1-2.511 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.259-.578 4.177 4.177 0 0 0 1.614-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.614-1.624 4.52 4.52 0 0 0-2.259-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.606 1.624 4.47 4.47 0 0 0 2.249.578zM79.83 6.3h2.52v5.73h.15l4.89-5.73h3.043v.149L85.6 11.973l5.338 7.542v.149h-3.08l-3.994-5.693-1.512 1.773v3.92h-2.52V6.299zM93.779 6h3.248l3.546 9.39h.15L104.268 6h3.267v13.365h-2.501v-6.589l.15-2.221h-.15l-3.398 8.81h-1.96l-3.416-8.81h-.149l.15 2.221v6.59h-2.483V6zm20.8 0h2.894l5.021 13.365h-2.781l-1.12-3.192h-5.115l-1.12 3.192h-2.781L114.579 6zm3.193 7.859l-1.176-3.36-.486-1.606h-.149l-.485 1.606-1.195 3.36h3.49zM124.553 6h4.872c.871 0 1.646.18 2.324.541.678.361 1.204.862 1.577 1.503.374.64.56 1.366.56 2.175 0 .858-.27 1.62-.812 2.286a4.617 4.617 0 0 1-2.044 1.447l-.018.13 3.584 5.134v.15h-2.894l-3.453-5.022h-1.176v5.021h-2.52V6zm4.853 6.03c.573 0 1.04-.175 1.4-.523.361-.349.542-.79.542-1.326 0-.51-.172-.945-.514-1.306-.342-.361-.806-.542-1.39-.542h-2.371v3.696h2.333zm7.23-6.03h2.52v5.73h.15l4.89-5.73h3.043v.15l-4.835 5.525 5.34 7.541v.15h-3.08l-3.996-5.694-1.512 1.773v3.92h-2.52V6z"
+									fill="#242A45"
+									fill-rule="nonzero"
+								/>
+								<g>
+									<circle fill="#5267DF" cx="12.5" cy="12.5" r="12.5" />
+									<path
+										d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z"
+										fill="#FFF"
+									/>
+								</g>
+							</g>
+						</svg>
+					</a>
+					<ul class="nav-links">
+						<li>
+							<a href="#" class="nav-link">Features</a>
+						</li>
+						<li>
+							<a href="#" class="nav-link">Pricing</a>
+						</li>
+						<li>
+							<a href="#" class="nav-link">Contact</a>
+						</li>
+						<li>
+							<a href="#" class="nav-link btn btn-danger">Login</a>
+						</li>
+						<li class="heading-social">
+							<a href="#" class="nav-link"
+								><i class="fa-brands fa-facebook-square social"></i
+							></a>
+							<a href="#" class="nav-link"
+								><i class="fa-brands fa-twitter social"></i
+							></a>
+						</li>
+					</ul>
+					<!-- hamburger menu -->
+					<div class="hamburger">
+						<div class="hamburger-btn"></div>
+					</div>
+				</nav>
+			</div>
+			<div class="main-header-content my-4 d-flex">
+				<!-- Left column -->
+				<div class="main-content push-right">
+					<h1 class="h1">A Simple Bookmark Manager</h1>
+					<p class="lead">
+						A clean and simple interface to organize your favourite websites.
+						Open a new browser tab and see your sites load instantly. Try it for
+						free.
+					</p>
+					<div class="d-flex buttons-group">
+						<button class="btn btn-primary">Get it on Chrome</button>
+						<button class="btn btn-light">Get it on Firefox</button>
+					</div>
+				</div>
+				<!-- Right column -->
+				<div class="main-hero animated fadeInBottom">
+					<img src="images/illustration-hero.svg" alt="hero" />
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="features shared">
+				<!-- features head -->
+				<div class="shared-head text-center">
+					<h2 class="h2">Features</h2>
+					<p class="lead">
+						Our aim is to make it quick and easy for you to access your <br />
+						favourite websites. Your bookmarks sync between your devices <br />
+						so you can access them on the go.
+					</p>
+				</div>
+				<!-- features head ends -->
+				<!-- tabs -->
+				<div class="shared-title py-1 d-flex text-center">
+					<p class="features-tab active" data-tab="tab-one">
+						Simple Bookmarking
+					</p>
+					<p class="features-tab" data-tab="tab-two">Speedy Searching</p>
+					<p class="features-tab" data-tab="tab-three">Easy Sharing</p>
+				</div>
+				<!-- end tabs -->
+				<!-- tabs sliders -->
+				<div class="tabs my-4">
+					<!-- tab one -->
+					<div
+						class="tab-content-first d-flex active animated fadeInLeft"
+						id="tab-one"
+					>
+						<div class="tab-hero bg-pattern mx-3">
+							<img
+								src="images/illustration-features-tab-1.svg"
+								alt="hero two"
+							/>
+						</div>
+						<div class="tab-description mx-3">
+							<h2 class="h2">Bookmark in one click</h2>
+							<p class="lead">
+								Organize your bookmarks however you like. Our simple
+								drag-and-drop interface gives you complete control over how you
+								manage your favourite sites.
+							</p>
+							<button class="btn btn-primary">More Info</button>
+						</div>
+					</div>
+					<!-- tab two -->
+					<div
+						class="tab-content-second d-flex animated fadeInLeft"
+						id="tab-two"
+					>
+						<div class="tab-hero bg-pattern mx-3">
+							<img
+								src="images/illustration-features-tab-2.svg"
+								alt="hero two"
+							/>
+						</div>
+						<div class="tab-description mx-3">
+							<h2 class="h2">Intelligent search</h2>
+							<p class="lead">
+								Our powerful search feature will help you find saved sites in no
+								time at all. No need to trawl through all of your bookmarks.
+							</p>
+							<button class="btn btn-primary">More Info</button>
+						</div>
+					</div>
+					<!-- tab three -->
+					<div
+						class="tab-content-third d-flex animated fadeInLeft"
+						id="tab-three"
+					>
+						<div class="tab-hero bg-pattern mx-3">
+							<img
+								src="images/illustration-features-tab-3.svg"
+								alt="hero three"
+							/>
+						</div>
+						<div class="tab-description mx-3">
+							<h2 class="h2">Share your bookmarks</h2>
+							<p class="lead">
+								Easily share your bookmarks and collections with others. Create
+								a shareable link that you can send at the click of a button.
+							</p>
+							<button class="btn btn-primary">More Info</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="downloads shared mt-max">
+				<!-- Downloads 2 -->
+				<div class="shared-head text-center">
+					<h2 class="h2">Download the extension</h2>
+					<p class="lead">
+						We've got more browsers in the pipeline. Please do let us know if
+						<br />
+						you've got a favourite you'd like us to prioritize.
+					</p>
+				</div>
+				<div class="container">
+					<div class="cards d-flex text-center">
+						<div class="card py-1 my-2">
+							<img
+								src="images/logo-chrome.svg"
+								alt="chrome"
+								class="ext-logo my-1"
+							/>
+							<h3 class="my-1">Add to Chrome</h3>
+							<p class="lead">Minimum version 62</p>
+							<img src="images/bg-dots.svg" alt="dots" class="ext-dots my-1" />
+							<button class="btn btn-primary">Add & Install Extension</button>
+						</div>
+						<div class="card d-flex py-1 my-2">
+							<img
+								src="images/logo-firefox.svg"
+								alt="chrome"
+								class="ext-logo my-1"
+							/>
+							<h3 class="my-1">Add to Firefox</h3>
+							<p class="lead">Minimum version 55</p>
+							<img src="images/bg-dots.svg" alt="dots" class="ext-dots my-1" />
+							<button class="btn btn-primary">Add & Install Extension</button>
+						</div>
+						<div class="card d-flex py-1 my-2">
+							<img
+								src="images/logo-opera.svg"
+								alt="chrome"
+								class="ext-logo my-1"
+							/>
+							<h3 class="my-1">Add to Opera</h3>
+							<p class="lead">Minimum version 46</p>
+							<img src="images/bg-dots.svg" alt="dots" class="ext-dots my-1" />
+							<button class="btn btn-primary">Add & Install Extension</button>
+						</div>
+					</div>
+				</div>
+				<!-- gap -->
+				<div class="my-2"></div>
+			</section>
+			<section class="faq-accordion shared">
+				<!-- FAQ -->
+				<div class="shared-head text-center">
+					<h2 class="h2">Frequently Asked Questions</h2>
+					<p class="lead">
+						Here are some of our FAQs. If you have any other questions <br />
+						you'd like answered please feel free to email us.
+					</p>
+				</div>
+				<div class="faq-container">
+					<div class="faq py-1 active toggle-faq">
+						<h3 class="faq-title h3">What is Bookmark?</h3>
+						<p class="faq-text lead">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+							tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
+							quis quam ornare mattis.
+						</p>
+						<button class="faq-toggle">
+							<i class="fas fa-chevron-down"></i>
+							<i class="fas fa-chevron-up"></i>
+						</button>
+					</div>
+					<div class="faq py-1 toggle-faq">
+						<h3 class="faq-title h3">How can I request a new browser?</h3>
+						<p class="faq-text lead">
+							Integer condimentum ipsum id imperdiet finibus. Vivamus in
+							placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida
+							pellentesque non ut velit.
+						</p>
+						<button class="faq-toggle">
+							<i class="fas fa-chevron-down"></i>
+							<i class="fas fa-chevron-up"></i>
+						</button>
+					</div>
+					<div class="faq py-1 toggle-faq">
+						<h3 class="faq-title h3">Is there a mobile app?</h3>
+						<p class="faq-text lead">
+							Vivamus luctus eros aliquet convallis ultricies. Mauris augue
+							massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus
+							eros aliquet convallis ultricies. Mauris augue massa, ultricies
+							non ligula. Suspendisse imperdie tVivamus luctus eros aliquet
+							convallis ultricies. Mauris augue massa, ultricies non ligula.
+							Suspendisse imperdiet.
+						</p>
+						<button class="faq-toggle">
+							<i class="fas fa-chevron-down"></i>
+							<i class="fas fa-chevron-up"></i>
+						</button>
+					</div>
+					<div class="faq py-1 toggle-faq">
+						<h3 class="faq-title h3">What about other Chromium browsers?</h3>
+						<p class="faq-text lead">
+							Integer condimentum ipsum id imperdiet finibus. Vivamus in
+							placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida
+							pellentesque non ut velit.
+						</p>
+						<button class="faq-toggle">
+							<i class="fas fa-chevron-down"></i>
+							<i class="fas fa-chevron-up"></i>
+						</button>
+					</div>
+					<div class="d-flex learn-more mt-4">
+						<button class="btn btn-primary">More Info</button>
+					</div>
+				</div>
+			</section>
+			<section class="call-to-action mt-max py-4 text-center">
+				<div class="container sub-heading">
+					<span>35,000+</span><span> already joined</span>
+				</div>
+				<h3 class="h3-light">
+					Stay up-to-date with what <br />
+					we're doing
+				</h3>
+				<form action="#" class="form-action d-flex py-1">
+					<div class="form-group">
+						<input
+							type="email"
+							id="email"
+							placeholder="email@example.com"
+							class="form-control"
+						/>
+						<img src="images/icon-error.svg" alt="error" class="error-icon" />
+						<small class="error-text">Whops,make sure it's an email</small>
+					</div>
+					<input
+						type="submit"
+						class="btn btn-danger-outline"
+						value="Contact Us"
+					/>
+				</form>
+			</section>
+			<footer class="main-footer py-2">
+				<div class="col container d-flex">
+					<div class="col-left d-flex">
+						<a href="index.html">
+							<svg width="148" height="25" xmlns="http://www.w3.org/2000/svg">
+								<g fill="none" fill-rule="evenodd">
+									<path
+										d="M37 6.299h5.227c.746 0 1.434.155 2.062.466.629.311 1.123.735 1.484 1.27s.542 1.12.542 1.754c0 .672-.165 1.254-.495 1.746-.33.491-.762.868-1.297 1.129v.15c.697.248 1.25.643 1.661 1.185.41.541.616 1.191.616 1.95 0 .735-.196 1.385-.588 1.951a3.817 3.817 0 0 1-1.587 1.307c-.665.305-1.403.457-2.212.457H37V6.299zm5.04 5.45c.548 0 .986-.152 1.316-.457.33-.305.495-.688.495-1.148 0-.448-.159-.824-.476-1.13-.318-.304-.738-.457-1.26-.457H39.52v3.192h2.52zm.28 5.619c.61 0 1.086-.159 1.428-.476.342-.317.513-.731.513-1.241 0-.51-.174-.927-.522-1.251-.349-.324-.847-.485-1.494-.485H39.52v3.453h2.8zm12.927 2.595c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.511-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.915-3.528a6.711 6.711 0 0 1 2.51-2.529C52.756 6.308 53.94 6 55.248 6c1.306 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.915 3.528a6.711 6.711 0 0 1-2.51 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.258-.578 4.177 4.177 0 0 0 1.615-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.615-1.624 4.52 4.52 0 0 0-2.258-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.605 1.624 4.47 4.47 0 0 0 2.25.578zm15.353 2.39c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.51-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.914-3.528a6.711 6.711 0 0 1 2.511-2.529C68.108 6.308 69.294 6 70.6 6c1.307 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.914 3.528a6.711 6.711 0 0 1-2.511 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.259-.578 4.177 4.177 0 0 0 1.614-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.614-1.624 4.52 4.52 0 0 0-2.259-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.606 1.624 4.47 4.47 0 0 0 2.249.578zM79.83 6.3h2.52v5.73h.15l4.89-5.73h3.043v.149L85.6 11.973l5.338 7.542v.149h-3.08l-3.994-5.693-1.512 1.773v3.92h-2.52V6.299zM93.779 6h3.248l3.546 9.39h.15L104.268 6h3.267v13.365h-2.501v-6.589l.15-2.221h-.15l-3.398 8.81h-1.96l-3.416-8.81h-.149l.15 2.221v6.59h-2.483V6zm20.8 0h2.894l5.021 13.365h-2.781l-1.12-3.192h-5.115l-1.12 3.192h-2.781L114.579 6zm3.193 7.859l-1.176-3.36-.486-1.606h-.149l-.485 1.606-1.195 3.36h3.49zM124.553 6h4.872c.871 0 1.646.18 2.324.541.678.361 1.204.862 1.577 1.503.374.64.56 1.366.56 2.175 0 .858-.27 1.62-.812 2.286a4.617 4.617 0 0 1-2.044 1.447l-.018.13 3.584 5.134v.15h-2.894l-3.453-5.022h-1.176v5.021h-2.52V6zm4.853 6.03c.573 0 1.04-.175 1.4-.523.361-.349.542-.79.542-1.326 0-.51-.172-.945-.514-1.306-.342-.361-.806-.542-1.39-.542h-2.371v3.696h2.333zm7.23-6.03h2.52v5.73h.15l4.89-5.73h3.043v.15l-4.835 5.525 5.34 7.541v.15h-3.08l-3.996-5.694-1.512 1.773v3.92h-2.52V6z"
+										fill="#FFF"
+										fill-rule="nonzero"
+									/>
+									<g>
+										<circle fill="#5267DF" cx="12.5" cy="12.5" r="12.5" />
+										<path
+											d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z"
+											fill="#FFF"
+										/>
+									</g>
+								</g>
+							</svg>
+						</a>
+						<ul class="d-flex">
+							<li>
+								<a href="#">Features</a>
+							</li>
+							<li>
+								<a href="#">Pricing</a>
+							</li>
+							<li>
+								<a href="#">Contact</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-right d-flex">
+						<a href="#"><i class="fa-brands fa-facebook-square social"></i></a>
+						<a href="#"><i class="fa-brands fa-twitter social"></i></a>
+					</div>
+				</div>
+				<p class="atrribution mt-2 text-center">
+					Challenge by
+					<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+						Frontend Mentor</a
+					>
+					Coded by<a href="https://twitter.com/mounirmotawakil" target="_blank">
+						Mounir</a
+					>
+				</p>
+			</footer>
+		</main>
+		<script src="app.js"></script>
+	</body>
+</html>

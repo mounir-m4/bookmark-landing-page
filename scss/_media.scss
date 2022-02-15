@@ -1,0 +1,275 @@
+@use 'config' as *;
+
+// smartphones
+@media screen and (max-width: 500px) {
+	.main-header {
+		.sticky {
+			display: none;
+		}
+		.container {
+			.main-nav {
+				// menu on mobile
+				.menu-mobile {
+					position: absolute;
+					display: flex;
+					flex-direction: column;
+					justify-content: start;
+					align-items: center;
+					top: 13%;
+					left: 0;
+					width: 100%;
+					background: $dark-blue;
+					color: $light;
+					height: 100%;
+					z-index: 10;
+					list-style: none;
+					padding: 2rem;
+					transition: all 0.2s ease-in;
+					li {
+						padding: 1rem;
+						border-top: 1px solid #9194a15d;
+						margin-left: 0;
+						a {
+							font-size: 1.2rem;
+							color: $light;
+							opacity: 0.9;
+							font-weight: 300;
+							letter-spacing: 1px;
+							display: flex;
+							box-shadow: none;
+						}
+						.btn {
+							padding: 0.5rem 4rem;
+							text-align: center;
+							background: transparent;
+							color: $light;
+							border: 2px solid $light;
+							width: 100%;
+						}
+					}
+				}
+				.heading-social {
+					display: flex;
+					margin-top: 2rem;
+					border: none;
+					.nav-link {
+						font-size: 2rem;
+					}
+				}
+			}
+		}
+		//menu
+		.nav-link {
+			display: none;
+		}
+		.hamburger {
+			display: flex;
+		}
+		.main-header-content {
+			text-align: center;
+			margin: 2rem 0;
+			flex-direction: column-reverse;
+			.push-right {
+				margin-left: 0;
+				margin-top: 4rem;
+				.h1 {
+					padding-right: 0;
+					font-size: 2rem;
+				}
+				.lead {
+					padding: 0.5rem;
+				}
+				.buttons-group {
+					align-items: center;
+					justify-content: space-between;
+					margin: 0 2rem;
+					button {
+						padding: 0.8rem 1.2rem;
+						font-size: 0.8rem;
+					}
+				}
+			}
+		}
+	}
+	main {
+		.features {
+			margin-top: 6rem;
+			.tabs {
+				.tab-content-first,
+				.tab-content-second,
+				.tab-content-third {
+					.tab-description {
+						margin: 4rem 0;
+						text-align: center;
+						.h2 {
+							font-size: 1.5rem;
+						}
+						.lead {
+							padding: 1rem;
+						}
+						.btn {
+							padding: 0.8rem 4rem;
+						}
+					}
+				}
+			}
+		}
+		.downloads {
+			margin-top: 4rem;
+			.shared-head {
+				.h2 {
+					font-size: 2rem;
+				}
+				.lead {
+					padding: 2rem;
+				}
+			}
+			.container {
+				.cards {
+					margin: 1rem 0;
+					gap: 1rem;
+					.card {
+						margin: 1rem 0;
+					}
+				}
+			}
+		}
+		.faq-accordion {
+			.shared-head {
+				.lead {
+					padding: 2rem;
+				}
+			}
+			.faq-container {
+				margin: 0 1.5rem;
+				width: auto;
+				.learn-more {
+					margin-top: 2rem;
+				}
+				.faq-title {
+					margin-right: 1.2rem;
+				}
+				.faq-toggle {
+					right: 0;
+				}
+			}
+		}
+
+		.call-to-action {
+			margin-top: 6rem;
+			h3 {
+				padding: 0.5rem;
+			}
+			.form-group {
+				width: 90%;
+			}
+			input[type='submit'] {
+				width: 90%;
+			}
+			.form-action {
+				align-items: center;
+				margin: 0.5rem;
+			}
+		}
+		.tab-content-first,
+		.tab-content-second,
+		.tab-content-third,
+		.shared-title,
+		.cards,
+		.form-action {
+			flex-direction: column;
+		}
+	}
+
+	.main-footer {
+		text-align: center;
+		.col {
+			flex-direction: column;
+			&-left {
+				flex-direction: column;
+				margin: 1rem auto;
+				ul {
+					margin-top: 2rem;
+					flex-direction: column;
+					li {
+						margin: 1rem auto;
+						a {
+							opacity: 0.8;
+						}
+					}
+				}
+			}
+			&-right {
+				margin: 1rem auto;
+			}
+		}
+	}
+}
+
+//landscape
+@media (max-height: 450px) {
+	//Header
+	.main-header {
+		.sticky {
+			display: none;
+		}
+		.main-header-content {
+			margin: 1rem 0;
+		}
+		.main-header-content {
+			.push-right {
+				margin-left: 1.5rem;
+				.h1 {
+					font-size: 2rem;
+				}
+				.lead {
+					padding-right: 2rem;
+				}
+				.buttons-group {
+					.btn {
+						font-size: 1rem;
+						padding: 0.5rem;
+					}
+				}
+			}
+		}
+	}
+	main {
+		//Features
+		.features {
+			.tabs {
+				margin: 2rem 0;
+				.tab-content-first,
+				.tab-content-second,
+				.tab-content-third {
+					.tab-description {
+						.h2 {
+							font-size: 1.5rem;
+						}
+						.lead {
+							padding-right: 3rem;
+						}
+						.btn {
+							padding: 0.4rem 2rem;
+						}
+					}
+				}
+			}
+		}
+		//downloads
+		.downloads {
+			.container {
+				.cards {
+					flex-direction: column;
+					margin: 1rem 0;
+					gap: 0;
+				}
+			}
+		}
+		.faq-accordion {
+			.faq-container {
+				width: 70%;
+			}
+		}
+	}
+}

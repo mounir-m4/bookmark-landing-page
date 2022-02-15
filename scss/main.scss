@@ -1,0 +1,396 @@
+@use 'config' as *;
+@use 'utilities' as *;
+@use 'animation' as *;
+@use 'media' as *;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Rubik', sans-serif;
+}
+//Header
+.main-header {
+	// sticky menu on scroll
+	.sticky {
+		position: fixed;
+		top: 0;
+		left: 0;
+		margin: 0;
+		max-width: 100%;
+		width: 100%;
+		padding: 1.5rem 5rem;
+		overflow: hidden;
+		z-index: 100;
+		background: white;
+		transition: all 0.3s ease-in-out;
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+			rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+	}
+	.main-nav {
+		align-items: center;
+		justify-content: space-between;
+		ul {
+			flex: 4;
+			justify-content: end;
+			.nav-link {
+				padding: 0.5rem 1.5rem;
+				font-weight: 300;
+			}
+			li:nth-child(4) {
+				margin-left: 1rem;
+			}
+			.heading-social {
+				display: none;
+			}
+		}
+	}
+
+	&-content {
+		align-items: center;
+		.push-right {
+			flex: 1;
+			margin-left: 6rem;
+		}
+		.main-content {
+			flex: 1;
+			//margin-right: auto;
+			h1 {
+				padding-right: 2rem;
+			}
+			p {
+				padding-right: 8rem;
+				line-height: 1.4;
+			}
+			.buttons-group {
+				gap: 1rem;
+			}
+		}
+		.main-hero {
+			flex: 1;
+			z-index: 1;
+			position: relative;
+			&::after {
+				content: '';
+				background: $soft-blue;
+				position: absolute;
+				bottom: -5%;
+				right: 0%;
+				height: 70%;
+				width: 70%;
+				border-radius: 0 0 0 50%;
+				z-index: -1;
+				overflow: hidden;
+			}
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
+// shared style for features,downloads,faq
+.shared {
+	&-head {
+		margin: 1rem auto;
+
+		p {
+			padding: 1rem 4rem;
+		}
+	}
+	&-title {
+		justify-content: center;
+		align-items: center;
+	}
+}
+//Features section
+.features {
+	&-tab {
+		font-size: 1.2rem;
+		transition: all 0.1s ease;
+		cursor: pointer;
+		border-bottom: 1px solid #9194a15d;
+		padding: 1rem 2.2rem;
+		user-select: none;
+		&:hover {
+			color: $soft-red;
+		}
+	}
+	// add red border to current active
+	&-tab.active {
+		border-bottom: 4px solid $soft-red;
+	}
+	.tabs {
+		.tab-content-first,
+		.tab-content-second,
+		.tab-content-third {
+			display: none;
+			align-items: center;
+			.tab {
+				&-hero {
+					align-items: center;
+					flex: 1;
+					img {
+						width: auto;
+						display: block;
+						margin: 0 auto;
+						width: 100%;
+					}
+				}
+				&-description {
+					flex: 1;
+					margin-left: 2rem;
+					p {
+						padding-right: 10rem;
+					}
+				}
+			}
+		}
+		// active state
+		.tab-content-first.active,
+		.tab-content-second.active,
+		.tab-content-third.active {
+			display: flex;
+		}
+	}
+}
+// downloads section
+.downloads {
+	.cards {
+		align-items: center;
+		justify-content: center;
+		gap: 3rem;
+		margin-top: -2rem;
+		.card:nth-child(1) {
+			margin-top: 0rem;
+		}
+		.card:nth-child(2) {
+			margin-top: 4rem;
+		}
+		.card:nth-child(3) {
+			margin-top: 8rem;
+		}
+		.card {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+				rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+			border-radius: 5px;
+			.ext-logo {
+				width: auto;
+				transition: all 0.2s ease-in;
+				&:hover {
+					transform: scale(1.1);
+				}
+			}
+			h3 {
+				font-weight: 500;
+				color: $dark-blue;
+			}
+			button {
+				padding: 0.8rem 1.5rem;
+			}
+		}
+	}
+}
+.faq-container {
+	margin: 1rem auto;
+	display: block;
+	width: 50%;
+}
+.faq {
+	background: transparent;
+	border-top: 1px solid #9194a15d;
+	margin: 1rem auto;
+	position: relative;
+	&:nth-child(4) {
+		border-bottom: 1px solid #9194a15d;
+		padding-bottom: 2rem;
+	}
+	.faq-title {
+		user-select: none;
+		cursor: pointer;
+		transition: all 0.2s ease;
+		&:hover {
+			color: $soft-red;
+		}
+	}
+	.faq-text {
+		display: none;
+		margin: 1.5rem 0 0;
+	}
+	.faq-toggle {
+		background: transparent;
+		border: 0;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1rem;
+		padding: 0;
+		position: absolute;
+		top: 15px;
+		right: 30px;
+		height: 30px;
+		width: 30px;
+		border-radius: 50%;
+		i {
+			font-size: 1.5rem;
+		}
+	}
+	.faq-toggle:focus {
+		outline: 0;
+	}
+}
+
+.faq.active .faq-text {
+	display: block;
+}
+
+.fa-chevron-down {
+	color: $soft-blue;
+}
+.faq-toggle .fa-chevron-up {
+	display: none;
+}
+.faq.active .faq-toggle .fa-chevron-up {
+	display: block;
+	color: $soft-red;
+}
+.faq.active .faq-toggle .fa-chevron-down {
+	display: none;
+}
+.learn-more {
+	align-content: center;
+	justify-content: center;
+}
+//call to action section
+.call-to-action {
+	background: $soft-blue;
+	color: $light;
+	.sub-heading {
+		margin-bottom: 2rem;
+		span {
+			font-weight: lighter;
+			letter-spacing: 5px;
+			font-size: 0.9rem;
+			text-transform: uppercase;
+		}
+	}
+	.form {
+		&-action {
+			justify-content: center;
+			align-items: flex-start;
+			align-content: center;
+			vertical-align: middle;
+			gap: 2rem;
+		}
+		&-group {
+			position: relative;
+			width: 30%;
+		}
+		&-control {
+			padding: 1rem 0.5rem;
+			border: none;
+			width: 100%;
+			transition: all 0.2s ease;
+			font-size: 1rem;
+			&:focus {
+				outline: 0;
+			}
+			&::placeholder {
+				font-size: 1rem;
+				color: $dark-blue;
+			}
+		}
+	}
+}
+.main-footer {
+	background: $dark-blue;
+	color: $light;
+	a {
+		margin: 0 1rem;
+		color: $light;
+		transition: all 0.4s ease;
+		&:hover {
+			color: $soft-red;
+		}
+	}
+	.col {
+		justify-content: space-between;
+		&-left {
+			flex: 1;
+			justify-content: space-around;
+		}
+		&-right {
+			flex: 1;
+			justify-content: end;
+			.social {
+				font-size: 2rem;
+			}
+		}
+	}
+	.atrribution {
+		padding: 0.5rem;
+		a {
+			margin: 0;
+			text-transform: capitalize;
+		}
+	}
+}
+
+// hamburger menu
+.hamburger {
+	display: none;
+}
+.hamburger {
+	position: relative;
+	align-items: center;
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+	padding: 1rem 0.5rem;
+	&-btn {
+		cursor: pointer;
+		width: 30px;
+		height: 3px;
+		background: $dark-blue;
+		border-radius: 10px;
+		transition: all 0.5s ease-in-out;
+		&:before {
+			content: '';
+			position: absolute;
+			width: 30px;
+			height: 3px;
+			background: $dark-blue;
+			border-radius: 10px;
+			transition: all 0.5s ease-in-out;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			width: 30px;
+			height: 3px;
+			background: $dark-blue;
+			border-radius: 10px;
+			transition: all 0.5s ease-in-out;
+		}
+		&:before {
+			transform: translateY(-8px);
+		}
+		&:after {
+			transform: translateY(8px);
+		}
+	}
+	// toggle menu btn
+	.open {
+		transform: translateX(-50px);
+		background: transparent;
+		&:before {
+			transform: rotate(45deg) translate(35px, -35px);
+		}
+		&:after {
+			transform: rotate(-45deg) translate(35px, 35px);
+		}
+	}
+}
